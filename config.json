@@ -1,0 +1,15 @@
+{
+    "data_ingestion": {
+        "tokenizers": [
+            "sentence-transformers/all-MiniLM-L6-v2",
+            "sentence-transformers/all-mpnet-base-v2"
+          ],
+          "max_tokens": [300, 400],
+          "merge_peers": [true, false],
+          "modes": ["hybrid", "standard"],
+          "serializer_providers": ["default"],
+          "min_token_thresholds": [15, 20],
+          "chunk_sizes": [256, 512, 1024],
+          "chunk_overlaps": [32, 64]
+        }
+    }
